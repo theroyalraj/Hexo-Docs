@@ -1,0 +1,1 @@
+/home/raj/Documents/hexo-theme-doc-seed/.deploy_git/static.json

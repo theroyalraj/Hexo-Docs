@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>hexo-theme-doc-seed |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"CRM-Telephony-Integration.html","title":""},"data":{"navigation":{"logo":{"text":"Salesken Docs","type":"link","path":"index.html"},"main":[{"text":"CRM-Telephony-Integration","type":"link","path":"/CRM-Telephony-Integration.html"},{"text":"Test","type":"link","path":"/test.html"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Salesken Docs</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="CRM-Telephony-Integration"><a href="#CRM-Telephony-Integration" class="headerlink" title="CRM Telephony Integration"></a>CRM Telephony Integration</h1><h2 id="Proxy-Call"><a href="#Proxy-Call" class="headerlink" title="Proxy Call"></a>Proxy Call</h2><blockquote>
+<p>A proxy call is when we connect the Salesken dialer server with the agent phone and then call the customer.<br>Which means the user dials a number and first a call is initiated from caller id to user’s own number and after users picks up the call, there is a call conference between user’s number, caller id and the dialed number.</p>
+</blockquote>
+<h2 id="Details-of-API"><a href="#Details-of-API" class="headerlink" title="Details of API"></a>Details of API</h2><p>Details of API</p>
+<div class="hexo-swagger-ui hexo-swagger-ui-v2"><link rel="stylesheet" href="/style/swagger-ui-v2.css">
+
+<!-- dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.10.0/js-yaml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.3/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.3/angular-sanitize.min.js"></script>
+<!-- angular-swagger-ui -->
+<script src="https://unpkg.com/angular-swagger-ui@0.5.4/dist/scripts/swagger-ui.min.js"></script>
+<script src="https://unpkg.com/angular-swagger-ui@0.5.4/dist/scripts/modules/swagger-yaml-parser.min.js"></script>
+<div class="swagger-wrap bootstrap" id="swagger-wrap-2">
+  <div swagger-ui url="'/cb9e9c16288b8968efca42c534c69ded/petstore.yaml'" api-explorer="true" parser="auto" trusted-sources="true" validator-url="false" permalinks="true" download="Download specification">
+  </div>
+</div>
+<script type="text/javascript">
+  angular
+  .module('swagger-module-2', ['ngSanitize', 'swaggerUi'])
+  .config([
+    '$provide',
+    '$locationProvider',
+    function($provide, $locationProvider) {
+      $provide.decorator('$anchorScroll', [
+        '$delegate',
+        function anchorScrollDecorator($delegate){
+          return function () { /* Just not doing anything to prevent $anchorScrool default behaviour  */}
+        }
+      ]);
+
+      $locationProvider.hashPrefix('');
+    }
+  ]);
+  angular.bootstrap(document.getElementById('swagger-wrap-2'), ['swagger-module-2'])
+</script>
+</div>
+<h2 id="Possible-requests"><a href="#Possible-requests" class="headerlink" title="Possible requests:"></a>Possible requests:</h2><ol>
+<li><p>Possiblities 1:</p>
+<ul>
+<li>CRM oipp id</li>
+<li>CRM user id</li>
+</ul>
+</li>
+<li><p>Possiblities 2</p>
+<ul>
+<li>CRM opp id</li>
+<li>CRM user id</li>
+<li>Customer phone number</li>
+</ul>
+</li>
+</ol>
+<h2 id="Possible-responses"><a href="#Possible-responses" class="headerlink" title="Possible responses"></a>Possible responses</h2><ol>
+<li>Response 1</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Here goes your json object definition</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>Response 2</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Here goes your json object definition</span><br></pre></td></tr></table></figure>
+<h2 id="Working-of-the-API"><a href="#Working-of-the-API" class="headerlink" title="Working of the API"></a>Working of the API</h2><blockquote>
+<p>Works on the principle of CTI integration offered by various CRMs wherein …….</p>
+</blockquote>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>
